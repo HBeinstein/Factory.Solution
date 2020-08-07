@@ -20,5 +20,11 @@ namespace Factory.Controllers
       List<Engineer> model = _db.Engineers.ToList();
       return View(model);
     }
+
+    public ActionResult Create()
+    {
+      ViewBag.EngineerId = new SelectList(_db.Engineers, "EngineerId", "Name");
+      return View();
+    }
   }
 }

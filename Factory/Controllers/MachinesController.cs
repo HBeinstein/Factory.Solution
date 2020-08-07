@@ -20,5 +20,17 @@ namespace Factory.Controllers
       List<Machine> model = _db.Machines.ToList();
       return View(model);
     }
+
+    public ActionResult Create()
+    {
+      ViewBag.MachineId = new SelectList(_db.Machines, "MachineId", "Name");
+      return View();
+    }
+
+    [HttpPost]
+    public ActionResult Create(Machine machine, int EngineerId)
+    {
+      _db.
+    }
   }
 }
