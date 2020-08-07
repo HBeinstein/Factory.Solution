@@ -11,6 +11,7 @@
 @if(@Model.Engineers.Count == 0)
 {
   <p>This machine doesn't have any engineers to fix it yet!</p>
+  <p>@Html.ActionLink("Add engineer", "AddEngineer", new { id = Model.MachineId})</p>
 }
 else
 {
@@ -25,6 +26,9 @@ else
       <input type="submit" value="Remove Engineer"/>
     }
   }
+  <p>@Html.ActionLink("Edit the machine description", "Edit")</p>
+  <p>@Html.ActionLink("Add another engineer", "AddEngineer", new { id = Model.MachineId})</p>
+  <p>@Html.ActionLink("Home", "Index", "Home")</p>
+
   </ul>
-  <p>@Html.ActionLink("Edit the @Html.DisplayFor(model => model.Name)'s description", "Edit")</p>
 }

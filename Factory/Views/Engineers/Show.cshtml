@@ -9,11 +9,10 @@
 <h2>Engineer Details:</h2>
 <h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
 
-<h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
-
 @if(@Model.Machines.Count == 0)
 {
-  <p>This engineer isn't responsible for any machines yet!.</p>
+  <p>This engineer isn't responsible for any machines yet!</p>
+  <p>@Html.ActionLink("Add machine", "AddMachine", new { id = Model.EngineerId})</p>
 }
 else
 {
@@ -29,5 +28,7 @@ else
     }
   }
   </ul>
-  <p>@Html.ActionLink("Edit @Html.DisplayFor(model => model.Name)'s profile", "Edit")</p>
+  <p>@Html.ActionLink("Edit engineer profile", "Edit")</p>
+  <p>@Html.ActionLink("Add another machine", "AddMachine", new { id = Model.EngineerId})</p>
+  <p>@Html.ActionLink("Home", "Index", "Home")</p>
 }
