@@ -8,5 +8,8 @@ namespace Factory.Models
       this.Engineers = new HashSet<EngineerMachine>();
     }
 
+    public int MachineId { get; set; }
+    public string Name { get; set; }
+    public ICollection<EngineerMachine> Engineers { get; }
   }
 }
