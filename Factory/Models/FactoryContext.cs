@@ -4,8 +4,12 @@ namespace Factory.Models
 {
   public class FactoryContext : DbContext
   {
-    public DbSet<Item> Items { get; set; }
+    public virtual DbSet<Engineer> Engineers { get; set; }
+    public virtual DbSet<Machine> Machines { get; set; }
+    public DbSet<EngineerMachine> EngineerMachine { get; set; }
 
     public FactoryContext(DbContextOptions options) : base(options) { }
+
+    public DoctorsOfficeContext(DbContextOptions options) : base(options) { }
   }
 }
