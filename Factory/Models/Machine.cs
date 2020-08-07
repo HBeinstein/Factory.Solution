@@ -1,9 +1,12 @@
 namespace Factory.Models
 {
-  public class ClassName
+  public class Machine
   {
 
-    // properties, methods, etc. will go here.
+    public Machine()
+    {
+      this.Engineers = new HashSet<EngineerMachine>();
+    }
 
   }
 }
