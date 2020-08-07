@@ -1,10 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
-using ProjectName.Models;
+using Factory.Models;
 using System.Collections.Generic;
 
 using Microsoft.AspNetCore.Mvc;
 
-namespace ProjectName.Controllers
+namespace Factory.Controllers
 {
   public class HomeController : Controller
   {

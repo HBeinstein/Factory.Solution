@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using ProjectName.Models;
+using Factory.Models;
 using System.Collections.Generic;
 
-namespace ProjectName.Controllers
+namespace Factory.Controllers
 {
   public class ClassNameController : Controller
   {
