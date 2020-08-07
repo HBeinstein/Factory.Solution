@@ -8,8 +8,6 @@
 <h2>Machine Details:</h2>
 <h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
 
-<h2>This machine is fixed by the following engineers:</h2>
-
 @if(@Model.Engineers.Count == 0)
 {
   <p>This machine doesn't have any engineers to fix it yet!</p>
@@ -17,14 +15,16 @@
 else
 {
   <ul>
+  <h2>This machine is fixed by the following engineers:</h2>
   @foreach(var join in Model.Engineers)
   {
     <li>@Html.ActionLink($"{join.Engineer.Name}", "Details", "Engineers", new { id = join.EngineerId})</li>
-    @* @using (Html.BeginForm("RemoveEngineer", "Machines"))
+    @using (Html.BeginForm("RemoveEngineer", "Machines"))
     {
       @Html.Hidden("joinId", @join.EngineerMachineId)
       <input type="submit" value="Remove Engineer"/>
-    } *@
+    }
   }
   </ul>
+  <p>@Html.ActionLink("Edit the @Html.DisplayFor(model => model.Name)'s description", "Edit")</p>
 }
