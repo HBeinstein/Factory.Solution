@@ -7,17 +7,17 @@ using System.Linq;
 
 namespace Factory.Controllers
 {
-  public class EngineerController : Controller
+  public class MachinesController : Controller
   {
-    private readonly EngineerContext _db;
-    public EngineersController(FactoryContext db)
+    private readonly FactoryContext _db;
+    public MachinesController(FactoryContext db)
     {
       _db = db;
     }
 
     public ActionResult Index()
     {
-      List<Engineer> model = _db.Engineers.ToList();
+      List<Machine> model = _db.Machines.ToList();
       return View(model);
     }
   }
