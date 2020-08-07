@@ -1,10 +1,10 @@
-using Microsoft.AspNetCore.Mvc;
-using Factory.Models;
-using System.Collections.Generic;
+// using Microsoft.AspNetCore.Mvc;
+// using Factory.Models;
+// using System.Collections.Generic;
 
-namespace Factory.Controllers
-{
-  public class ClassNameController : Controller
-  {
-  }
-}
+// namespace Factory.Controllers
+// {
+//   public class ClassNameController : Controller
+//   {
+//   }
+// }
