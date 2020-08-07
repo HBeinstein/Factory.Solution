@@ -1,10 +1,24 @@
-// using Microsoft.AspNetCore.Mvc;
-// using Factory.Models;
-// using System.Collections.Generic;
+using DoctorsOffice.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
 
-// namespace Factory.Controllers
-// {
-//   public class ClassNameController : Controller
-//   {
-//   }
-// }
+namespace Factory.Controllers
+{
+  public class EngineerController : Controller
+  {
+    private readonly EngineerContext _db;
+    public EngineersController(FactoryContext db)
+    {
+      _db = db;
+    }
+
+    public ActionResult Index()
+    {
+      List<Engineer> model = _db.Engineers.ToList();
+      return View(model);
+    }
+  }
+}
