@@ -1,6 +1,6 @@
 namespace Factory.Models
 {
-  public class ClassName
+  public class EngineerMachine
   {
 
     // properties, methods, etc. will go here.
