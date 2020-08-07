@@ -1,4 +1,4 @@
-using DoctorsOffice.Models;
+using Factory.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
