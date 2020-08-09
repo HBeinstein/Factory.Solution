@@ -24,6 +24,7 @@ This project is an program created to practice MVC web app design and many-to-ma
 ## Setup/Installation Requirements
 
 * _Clone or download this repository located at https://github.com/HBeinstein/HairSalon.Solution.
+* _TO CREATE DATABASE: Run 
 * _Run $ dotnet restore to download all dev dependencies._
 * _Run $ dotnet build to create project._
 
