@@ -26,9 +26,9 @@ else
       <input type="submit" value="Remove Engineer"/>
     }
   }
-  <p>@Html.ActionLink("Edit the machine description", "Edit")</p>
-  <p>@Html.ActionLink("Add another engineer", "AddEngineer", new { id = Model.MachineId})</p>
-  <p>@Html.ActionLink("Home", "Index", "Home")</p>
 
   </ul>
 }
+  <p>@Html.ActionLink("Edit the machine description", "Edit", new { id = Model.MachineId})</p>
+  <p>@Html.ActionLink("Add another engineer", "AddEngineer", new { id = Model.MachineId})</p>
+  <p>@Html.ActionLink("Home", "Index", "Home")</p>

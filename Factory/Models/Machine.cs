@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+
 
 namespace Factory.Models
 {
@@ -13,6 +13,6 @@ namespace Factory.Models
 
     public int MachineId { get; set; }
     public string Name { get; set; }
-    public ICollection<EngineerMachine> Engineers { get; }
+    public virtual ICollection<EngineerMachine> Engineers { get; }
   }
 }

@@ -12,6 +12,6 @@ namespace Factory.Models
 
     public int EngineerId { get; set; }
     public string Name { get; set; }
-    public virtual ICollection<EngineerMachine>Machines { get; }
+    public virtual ICollection<EngineerMachine> Machines { get; }
   }
 }
